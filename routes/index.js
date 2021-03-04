@@ -1,7 +1,11 @@
 /*
  * GET home page.
  */
-var labs = require('../labs.json');
+var express = require('express');
+var http = require('http');
+var path = require('path');
+var handlebars = require('express3-handlebars')
+var labs = require('/labs.json');
 
 exports.view = function(req, res){
   if(labs.length < 9) {
